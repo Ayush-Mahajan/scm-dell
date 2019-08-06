@@ -31,7 +31,7 @@
     <div class="sidebar-collapse">
       <ul class="nav" id="main-menu">
         <li class="text-center user-image-back">
-          <center><img src="static/img/find_user.png" class="img-responsive" /></center>
+          <div style="text-align: center"><img src="static/img/find_user.png" class="img-responsive" /></div>
           <p style="color:white;">{{ users[5] }}</p>
         </li>
         <li>
@@ -54,3 +54,51 @@
       </ul>
     </div>
   </nav>
+
+  <div class="testbox">
+    <form action="http://127.0.0.1:5000/home" method="post">
+      <div class="banner">
+        <h1>Add New Issue</h1>
+      </div>
+      <div class="item">
+        <p>Order id</p>
+        <div class="item">
+          <input type="text" name="orderid"/>
+        </div>
+      </div>
+      <div class="item">
+        <p>Product id </p>
+        <input type="text" name="productid"/>
+      </div>
+      <div class="item">
+        <p>Product Name</p>
+        <input type="text" name="productname" />
+      </div>
+      <div class="item">
+        <p>Quantity</p>
+        <input type="text" name="quantity"/>
+      </div>
+      <div class="item">
+        <p>Supplier id</p>
+        <input type="text" name="supplierid"/>
+      </div>
+      <div class="item">
+        <p>Reason</p>
+        <div class="city-item">
+          <input type="text" name="reason"/>
+          <select>
+            <option value="1">Natural Disaster</option>
+            <option value="2">Shipment Delay </option>
+            <option value="3">Raw Material Shortage</option>
+            <option value="4">Data and Human Error</option>
+            <option value="5">Financial Constraints</option>
+          </select>
+        </div>
+      </div>
+      <div class="item">
+      <div class="btn-block">
+        <button>Register Ticket</button>
+      </div>
+    </form>
+  </div>
+</div>
