@@ -16,6 +16,7 @@ export class AtHomeComponent implements OnInit {
   link1(){
     this.router.navigate([newaction]);
   }
+
   link2(){
     this.router.navigate([actiontracker]);
   }
